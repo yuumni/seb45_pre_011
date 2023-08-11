@@ -1,0 +1,127 @@
+.header {
+  width: 100vw;
+  height: 50px;
+  border-top: 4px solid orange;
+  border-bottom: 1px solid lightgray;
+  box-sizing: border-box;
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  height: 45px;
+  position: relative;
+}
+
+.logo {
+  width: fit-content;
+  display: flex;
+  font-size: 20px;
+  padding: 9.3px ;
+}
+
+.logo:hover {
+  background-color: rgb(221, 223, 225);
+  cursor: pointer;
+}
+
+.logo-icon {
+  height: 25px;
+  width: 30px;
+}
+
+.logo-letter-first {
+  font-weight: 230;
+  margin-right: 3px;
+  margin-top: 3px;
+}
+
+.logo-letter-second {
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.products-btn {
+  border-radius: 30px;
+  text-align: center;
+  line-height: 27px;
+  font-size: 13px;
+  color: rgb(64, 71, 77);
+  width: 80px;
+  height: 27px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.products-btn:hover {
+  background-color: rgb(221, 223, 225);
+  color: rgb(28, 31, 33);
+  cursor: pointer;
+}
+
+.search-input {
+  display: flex; 
+  align-items: center; 
+  background: #fff; 
+  border: 1px solid #ccc; 
+  padding: 2px; 
+  border-radius: 5px;
+  width: 740px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+.search-input:focus-within {
+  border-color: #6ab2ff;
+  box-shadow: 0 0 0 4px rgb(218, 232, 241);
+}
+
+.search-icon {
+  margin-left: 5px;
+  color: rgb(112, 121, 131);
+}
+
+.search-field {
+  border: none;
+  padding: 5px;
+  width: 100%;
+  outline: none;
+}
+
+.log-in-btn {
+  height: 29px;
+  line-height: 29px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 8%; 
+  background-color: rgb(218, 232, 241);
+  color: rgb(45, 95, 139);
+}
+
+.log-in-btn:hover {
+  background-color: rgb(183, 211, 228);
+  cursor: pointer;
+}
+
+.sign-up-btn {
+  height: 29px;
+  line-height: 29px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  position: absolute;
+  right: 1%;
+  background-color: rgb(19, 127, 254);
+  color: #fff;
+}
+
+.sign-up-btn:hover {
+  background-color: rgb(15, 104, 206);
+  cursor: pointer;
+}
