@@ -1,0 +1,62 @@
+.box {
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  width: 18.5vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputprofile {
+  border: 2px solid #d9d9d9;
+  border-radius: 5px;
+  width: 16vw;
+  height: 2.5vh;
+}
+
+.text {
+  font: Inter;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.textgroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.findpassword {
+  color: #4bb6e4;
+  font-weight: 600;
+}
+
+.findpassword:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.loginbutton {
+  border-radius: 5px;
+  width: 16.5vw;
+  height: 4.5vh;
+  color: white;
+  background-color: #0a95ff;
+  font: Inter;
+  text-align: center;
+  line-height: 34px;
+}
+
+.loginbutton:hover {
+  cursor: pointer;
+  filter: brightness(0.9);
+}
+
+.warningmsg {
+  display: none;
+  color: red;
+  margin-top: 3px;
+  font-size: 13px;
+}
