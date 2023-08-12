@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 7px;
 }
 
 .logo {
@@ -19,6 +20,11 @@
 }
 
 .google {
+  background-color: white;
+}
+
+.googlecontents {
+  margin-right: 15px;
 }
 
 .github {
@@ -26,9 +32,17 @@
   background-color: #2f3337;
 }
 
+.githubcontents {
+  margin-right: 15px;
+}
+
 .facebook {
   color: white;
   background-color: #385499;
+}
+
+.facebookcontents {
+  margin-right: 15px;
 }
 
 .facebook:hover,

@@ -6,7 +6,9 @@ function Login() {
     <>
       <div className="login box">
         <div className="emailpart">
-          <div className="text">Email</div>
+          <div className="guide">
+            <div className="text">Email</div>
+          </div>
           <input className="inputprofile" placeholder="Enter the email"></input>
           <div className="inaccurateemail warningmsg">
             이메일 형식이 올바르지 않습니다
