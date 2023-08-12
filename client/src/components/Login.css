@@ -68,9 +68,22 @@
   filter: brightness(0.9);
 }
 
+.warn {
+  display: flex;
+  flex-direction: flex-start;
+}
+
 .warningmsg {
   display: none;
   color: red;
   margin-top: 3px;
   font-size: 13px;
+}
+
+.show {
+  display: block;
+}
+
+.invalid {
+  border: 2px solid red;
 }
