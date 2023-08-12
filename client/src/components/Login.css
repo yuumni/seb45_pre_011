@@ -2,8 +2,8 @@
   background-color: white;
   border: 2px solid #d9d9d9;
   border-radius: 5px;
-  width: 18.5vw;
-  height: 35vh;
+  width: 314px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
 .inputprofile {
   border: 2px solid #d9d9d9;
   border-radius: 5px;
-  width: 16vw;
+  width: 230px;
   height: 2.5vh;
 }
 
@@ -52,8 +52,9 @@
 }
 
 .loginbutton {
+  border: 2px solid #d9d9d9;
   border-radius: 5px;
-  width: 16.5vw;
+  width: 238px;
   height: 4.5vh;
   color: white;
   background-color: #0a95ff;
