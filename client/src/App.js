@@ -1,21 +1,13 @@
-import "./App.css";
-import stackoverflowLogo from "./assets/stackoverflowLogo.svg";
-import OAuth from "./components/OAuth";
-import Login from "./components/Login";
+import React from "react";
+import LoginPage from "./components/LoginPage";
+import { useSelector } from "react-redux";
+import { selectedUser } from "./features/userSlice";
+import TestLogout from "./components/TestLogout";
 
 function App() {
-  return (
-    <div className="app-container">
-      <div className="loginpage">
-        <img src={stackoverflowLogo} alt="stackoverflow" className="mainlogo" />
-        <OAuth />
-        <Login />
-        <div className="guidemsg">
-          계정이 없으신가요? <span className="signupmsg">회원가입</span>
-        </div>
-      </div>
-    </div>
-  );
+  const user = useSelector(selectedUser);
+
+  return <>{user ? <TestLogout /> : <LoginPage />}</>;
 }
 
 export default App;
