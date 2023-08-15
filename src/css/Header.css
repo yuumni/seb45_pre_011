@@ -1,9 +1,8 @@
 .header {
   width: 100vw;
-  height: 50px;
+  height: 51px;
   border-top: 4px solid orange;
   border-bottom: 1px solid lightgray;
-  box-sizing: border-box;
 }
 
 .header-center {
@@ -11,7 +10,7 @@
   align-items: center;
   width: 1200px;
   margin: 0 auto;
-  height: 45px;
+  height: 50px;
   position: relative;
 }
 
@@ -19,28 +18,33 @@
   width: fit-content;
   display: flex;
   font-size: 20px;
-  padding: 9.3px ;
+  padding: 13px 5px 8px;
+  height: 51px;
+  box-sizing: border-box;
 }
 
 .logo:hover {
-  background-color: rgb(221, 223, 225);
+  background-color: rgb(228, 231, 233);
   cursor: pointer;
 }
 
 .logo-icon {
-  height: 25px;
-  width: 30px;
+  height: 27px;
+  width: 32px;
+  transform: translateY(-2px);
 }
 
 .logo-letter-first {
-  font-weight: 230;
-  margin-right: 3px;
+  font-weight: 250;
+  margin-right: 2px;
   margin-top: 3px;
+  letter-spacing: -.8px;
 }
 
 .logo-letter-second {
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 3px;
+  letter-spacing: -.8px;
 }
 
 .products-btn {
@@ -56,7 +60,7 @@
 }
 
 .products-btn:hover {
-  background-color: rgb(221, 223, 225);
+  background-color: rgb(228, 231, 233);
   color: rgb(28, 31, 33);
   cursor: pointer;
 }
@@ -91,11 +95,11 @@
 }
 
 .log-in-btn {
-  height: 29px;
-  line-height: 29px;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 5px;
   position: absolute;
   right: 8%; 
@@ -106,14 +110,16 @@
 .log-in-btn:hover {
   background-color: rgb(183, 211, 228);
   cursor: pointer;
+  color: rgb(35, 74, 109);
 }
 
 .sign-up-btn {
-  height: 29px;
-  line-height: 29px;
-  font-size: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 13px;
+  font-weight: 600;
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 5px;
   position: absolute;
   right: 1%;
@@ -123,5 +129,111 @@
 
 .sign-up-btn:hover {
   background-color: rgb(15, 104, 206);
+  cursor: pointer;
+}
+
+
+/* SearchDropdown */
+.dropdown-body {
+  position: absolute;
+  top: 52px;
+  transform: translateX(-3px);
+  width: 744px;
+  height: fit-content;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px lightgray;
+}
+
+.triangle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-width: 1px 1px 0 0;
+  border-color: lightgray;
+  border-style: solid;
+  transform: translate(0, -6px) rotate(-45deg);  
+}
+
+.dropdown-section-first {
+  width: inherit;
+  height: fit-content;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+  line-height: 2.2;
+  font-size: 13px;
+  padding: 4px 10px;
+  color: rgb(96, 96, 96);
+ 
+}
+
+.left span {
+  color: black;
+  letter-spacing: .2px;
+  font-family: var(--font-googleFont);
+  font-weight: 480;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  line-height: 2.2;
+  font-size: 13px;
+  padding: 4px 10px;
+  color: rgb(96, 96, 96);
+}
+
+.right span {
+  color: black;
+  letter-spacing: .2px;
+  font-family: var(--font-googleFont);
+  font-weight: 480;
+}
+
+.dropdown-section-second {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.ask-btn {
+  width: fit-content;
+  height: 27px;
+  line-height: 27px;
+  font-size: 11px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 5px;
+  background-color: rgb(218, 232, 241);
+  color: rgb(45, 95, 139);
+}
+
+.ask-btn:hover {
+  background-color: rgb(183, 211, 228);
+  cursor: pointer;
+  color: rgb(35, 74, 109);
+}
+
+.search-help-btn {
+  width: fit-content;
+  height: 27px;
+  line-height: 27px;
+  font-size: 11px;
+  color: rgb(11, 93, 192);
+}
+
+.search-help-btn:hover {
+  color: rgb(33, 133, 255);
   cursor: pointer;
 }
