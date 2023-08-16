@@ -1,5 +1,5 @@
 import React from "react";
-import googleLogo from "../assets/googleLogo.svg";
+import GoogleSocialLogin from "./OAuth/GoogleSocialLogin";
 import facebookLogo from "../assets/facebookLogo.svg";
 import githubLogo from "../assets/githubLogo.svg";
 import "./OAuth.css";
@@ -7,12 +7,7 @@ import "./OAuth.css";
 function OAuth() {
   return (
     <>
-      <div className="social google">
-        <div className="googlecontents">
-          <img src={googleLogo} alt="Google Logo" className="logo" />
-          Log in with Google
-        </div>
-      </div>
+      <GoogleSocialLogin />
       <div className="social github">
         <div className="githubcontents">
           <img src={githubLogo} alt="Github Logo" className="logo" />

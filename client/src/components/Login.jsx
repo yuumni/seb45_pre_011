@@ -3,6 +3,7 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { login } from "../features/userSlice";
 import axios from "axios";
+import FindPassword from "./FindPassword";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -42,10 +43,16 @@ function Login() {
     try {
       // Axios를 사용하여 서버로 POST 요청 전송
       // axios.post 메서드가 http 요청(request) 보내주는 메소드임을 잊지 말자
-      const response = await axios.post("/user/login", body);
+      const response = await axios.post(
+        "http://localhost:3001/user/login",
+        body
+      );
 
       // 서버에서 받아온 토큰 추출
       const token = response.data.token;
+
+      // 서버에서 받아온 토큰을 로컬 스토리지에 저장
+      localStorage.setItem("token", token);
 
       // 서버에서 받아온 토큰을 사용하여 Redux 상태 업데이트
       dispatch(
@@ -63,6 +70,11 @@ function Login() {
       console.error("Login error:", error);
       setLoginError(true);
     }
+  };
+
+  const [showModal, setShowModal] = useState(false);
+  const handleForgotPassword = () => {
+    setShowModal(true);
   };
 
   return (
@@ -91,7 +103,9 @@ function Login() {
         <div className="passwordpart">
           <div className="textgroup">
             <div className="text">Password</div>
-            <div className="findpassword">Forget Password?</div>
+            <div className="findpassword" onClick={handleForgotPassword}>
+              Forget Password?
+            </div>
           </div>
           <input
             type="password"
@@ -108,6 +122,7 @@ function Login() {
         </div>
         <button className="loginbutton">Log in</button>
       </form>
+      {showModal && <FindPassword onClose={() => setShowModal(false)} />}
     </>
   );
 }
