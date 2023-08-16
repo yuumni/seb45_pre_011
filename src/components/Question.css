@@ -44,13 +44,16 @@
   justify-content: space-between;
   height: fit-content;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tags {
   display: flex;
   padding-left: 2px; 
-  height: 42px;
+  min-height: 42px;
+  height: fit-content;
   align-items: center;
+  overflow-x: auto;
 }
 
 .tag {
@@ -77,6 +80,7 @@
   min-width: 180px;
   justify-content: center;
   gap: 5px;
+  padding: 7px 0 ;
 }
 
 .user-photo {
