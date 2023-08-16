@@ -43,7 +43,10 @@ function SideNav() {
         onClick={() => handleTabClick("questions")}
       >
         <FontAwesomeIcon icon={faEarthAmericas} className="icon"/>
-        <div className="questions-tab">Questions</div>
+        <div 
+          className={`questions-tab ${activeTab === "questions" ? "active" : ""}`}
+          onClick={() => handleTabClick("questions")}
+        >Questions</div>
       </div>
       <div
         className={`tags-tab ${activeTab === "tags" ? "active" : ""}`}
