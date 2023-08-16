@@ -1,0 +1,135 @@
+.sidebar-body {
+  border: 1px solid;
+  width: 161px;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.home-tab {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 0 10px 7px;
+  color: rgb(64, 71, 81);
+}
+
+.home-tab:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.home-tab.active {
+  background-color: rgb(238, 239, 240);
+  font-weight: 800;
+  color: rgb(12, 12, 13);
+  border-right: 4px solid orange;
+  cursor: pointer;
+}
+
+.public-tab {
+  font-size: 11px;
+  padding: 10px 0 2px 7px;
+  color: rgb(64, 71, 81);
+}
+
+
+.questions-tab-icon {
+  display: flex;
+  position: relative;
+  color: rgb(64, 71, 81);
+}
+
+.questions-tab-icon:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.questions-tab-icon.active {
+  color: rgb(12, 12, 13);
+}
+
+.questions-tab:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.questions-tab.active {
+  background-color: rgb(238, 239, 240);
+  font-weight: 800;
+  color: rgb(12, 12, 13);
+  border-right: 4px solid orange;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top:50%;
+  left: 7px;
+  transform: translateY(-50%);
+}
+
+.questions-tab {
+  font-size: 13px;
+  padding: 10px 0 10px 28px;
+  width: 161px;
+  font-weight: 500;
+}
+
+.tags-tab {
+  font-size: 13px;
+  padding: 10px 0 10px 28px;
+  font-weight: 500;
+  color: rgb(64, 71, 81);
+}
+
+.tags-tab:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.tags-tab.active {
+  background-color: rgb(238, 239, 240);
+  font-weight: 800;
+  color: rgb(12, 12, 13);
+  border-right: 4px solid orange;
+  cursor: pointer;
+}
+
+.users-tab {
+  font-size: 13px;
+  padding: 10px 0 10px 28px;
+  font-weight: 500;
+  color: rgb(64, 71, 81);
+}
+
+.users-tab:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.users-tab.active {
+  background-color: rgb(238, 239, 240);
+  font-weight: 800;
+  color: rgb(12, 12, 13);
+  border-right: 4px solid orange;
+  cursor: pointer;
+}
+
+.companies-tab {
+  font-size: 13px;
+  padding: 10px 0 10px 28px;
+  font-weight: 500;
+  color: rgb(64, 71, 81);
+}
+
+.companies-tab:hover {
+  color: rgb(12, 12, 13);
+  cursor: pointer;
+}
+
+.companies-tab.active {
+  background-color: rgb(238, 239, 240);
+  font-weight: 800;
+  color: rgb(12, 12, 13);
+  border-right: 4px solid orange;
+  cursor: pointer;
+}
