@@ -22,10 +22,6 @@ const Question = () => {
     dispatch(setContent(''));
   };
 
-  const isTitleValid = title.length >= 5;
-  const isContentValid = content.length >= 10; 
-
-
   return (
     <div className='Question-Wrapper'>
       <div className='Category-Text'>질문 작성</div>
@@ -36,9 +32,7 @@ const Question = () => {
         value={title}
         onChange={handleTitleChange}
       />
-      {!isTitleValid && <p>제목은 최소 5글자 이상이어야 합니다.</p>}
       <PostEditor content={content} onContentChange={(newContent) => dispatch(setContent(newContent))} />
-      {!isContentValid && <p>내용은 최소 10글자 이상이어야 합니다.</p>}
       <button onClick={handleSave}>게시</button>
       <button onClick={handleCancel}>취소</button>
     </div>
