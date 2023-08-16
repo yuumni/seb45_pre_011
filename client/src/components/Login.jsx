@@ -48,20 +48,29 @@ function Login() {
         body
       );
 
-      // 서버에서 받아온 토큰 추출
-      const token = response.data.token;
+      // 서버에서 받아온 엑세스 토큰 추출
+      const accessToken = response.data.accessToken;
 
-      // 서버에서 받아온 토큰을 로컬 스토리지에 저장
-      localStorage.setItem("token", token);
+      // 서버에서 받아온 토큰을 로컬 스토리지에 저장해서...
+      localStorage.setItem("token", accessToken);
+
+      // ...엑세스 토큰 헤더에 담아서 요청 보내는 악시오스 문법
+      axios.defaults.headers.common["Authorization"] = `Bearer ${accessToken}`;
 
       // 서버에서 받아온 토큰을 사용하여 Redux 상태 업데이트
       dispatch(
         login({
           email: email,
-          token: token,
           loggedIn: true,
         })
       );
+
+      // 얘는 그냥 잘 받아졌나 확인하는 정도
+      console.log({
+        이메일: email,
+        엑세스토큰: accessToken,
+        비밀번호: pwd,
+      });
 
       // 로그인 성공 시 다른 화면으로 이동하거나 상태를 변경하는 로직 추가 필요
       // 예시: history.push("/dashboard");
@@ -69,6 +78,12 @@ function Login() {
     } catch (error) {
       console.error("Login error:", error);
       setLoginError(true);
+      if (error.response.status === 401) {
+        // 토큰 만료 또는 유효하지 않은 경우
+        // 여기서는 로그아웃 처리를 해주어야 할 것입니다.
+      } else {
+        // 다른 에러 처리
+      }
     }
   };
 
