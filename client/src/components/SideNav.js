@@ -25,19 +25,15 @@ function SideNav() {
   };
 
   return (
-    <div className="sidebar-body">
+    <div className="side-container">
+      <div className="sidebar-body">
       <div
         className={`home-tab ${activeTab === "home" ? "active" : ""}`}
         onClick={() => handleTabClick("home")}
       >
         Home
       </div>
-      <div
-        className={`public-tab ${activeTab === "public" ? "active" : ""}`}
-        onClick={() => handleTabClick("public")}
-      >
-        PUBLIC
-      </div>
+      <div className='public-tab'>PUBLIC</div>
       <div
         className={`questions-tab-icon ${activeTab === "questions" ? "active" : ""}`}
         onClick={() => handleTabClick("questions")}
@@ -66,7 +62,9 @@ function SideNav() {
       >
         Companies
       </div>
+      </div>
     </div>
+    
   );
 }
 

@@ -15,8 +15,9 @@
 
 .logo {
   vertical-align: middle;
-  width: 4vw;
-  height: 4vh;
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
 }
 
 .google {
@@ -25,6 +26,9 @@
 
 .googlecontents {
   margin-right: 15px;
+  display: flex;
+  line-height: 52px;
+  align-items: center;
 }
 
 .github {
@@ -34,6 +38,9 @@
 
 .githubcontents {
   margin-right: 15px;
+  display: flex;
+  line-height: 52px;
+  align-items: center;
 }
 
 .facebook {
@@ -43,6 +50,9 @@
 
 .facebookcontents {
   margin-right: 15px;
+  display: flex;
+  line-height: 52px;
+  align-items: center;
 }
 
 .facebook:hover,

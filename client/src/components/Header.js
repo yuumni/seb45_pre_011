@@ -27,7 +27,7 @@ function Header() {
     <>
     <div className="header">
       <div className="header-center">
-        <div className="logo">
+        <div className="logo-body">
           <img className='logo-icon' src='image/pngwing.com.png'/>
           <div className='logo-letter-first'>stack</div>
           <div className="logo-letter-second">overflow</div>
