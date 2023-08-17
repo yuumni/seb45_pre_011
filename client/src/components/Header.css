@@ -22,7 +22,7 @@
   padding: 13px 5px 8px;
   height: 51px;
   box-sizing: border-box;
-  transform: translateY(.5px);
+  transform: translateY(.4px);
 }
 
 .logo-body:hover {
@@ -182,7 +182,7 @@
 .left span {
   color: black;
   letter-spacing: .2px;
-  font-family: var(--font-googleFont);
+  font-family: var(--font-google);
   font-weight: 480;
 }
 
@@ -198,7 +198,7 @@
 .right span {
   color: black;
   letter-spacing: .2px;
-  font-family: var(--font-googleFont);
+  font-family: var(--font-google);
   font-weight: 480;
 }
 
