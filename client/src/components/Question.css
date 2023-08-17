@@ -1,5 +1,5 @@
 .Question {
-  width: 800px;
+  width: calc(1200px- 161px);
   height: fit-content;
   border-top: 1px solid lightgray;
   display: flex;
@@ -7,6 +7,12 @@
 
 .left-section {
   width: 15%;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.good, .vote-count, .bad {
+  padding-left: 70px;
 }
 
 .right-section {
