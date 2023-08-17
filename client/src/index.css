@@ -11,12 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-@font-face {
-  font-family: "googleRedHat";
-  src: url(./assets/fonts/Red_Hat_Mono/RedHatMono-VariableFont_wght.ttf);
-}
-
-:root {
-  --font-googleFont: "googleRedHat";
-}
