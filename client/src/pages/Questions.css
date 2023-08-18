@@ -1,6 +1,6 @@
-body {
+/* body,html {
   background-color: #fff;
-}
+} */
 
 .questions-board {
   width: calc(1200px - 161px);

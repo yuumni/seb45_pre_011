@@ -3,6 +3,10 @@ import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
+import LoginPage from "./LoginPage";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+
 function Header() {
   const [isSearchDropdownOpen, setIsSearchDropdownOpen] = useState(false);
   const searchInputRef = useRef(null);

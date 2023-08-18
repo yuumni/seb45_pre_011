@@ -14,6 +14,29 @@ function Questions() {
       <div className="questions-container">
         <Question />
         <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
+        <Question />
       </div>
       
     </>

@@ -17,9 +17,11 @@ function App() {
     <>
      
       <Header className='header'/>
-      <SideNav className='sidebar'/> 
-      <Questions />
+      {/* <SideNav className='sidebar'/> 
+      <Questions /> */}
        
+       
+
     </>
   );
 }
@@ -27,18 +29,21 @@ function App() {
 export default App;
 
 
-// {/* <BrowserRouter >
-//        <Routes>
-//          {/* 미 로그인 상태일 때 */}
-//          <Route
-//            path="/"
-//            element={!user ? <LoginPage /> : <Navigate to="/test-logout" />}
-//          />
-//          {/* 로그인 상태일 때 */}
-//          <Route
-//            path="/test-logout"
-//            element={user ? <TestLogout /> : <Navigate to="/" />}
-//          />
-//          <Route path=''/>
-//        </Routes>
-//        </BrowserRouter> */}
+      //   <BrowserRouter >
+      //  <Routes>
+      //    {/* 미 로그인 상태일 때 */}
+      //    <Route
+      //      path="/"
+      //      element={!user ? <LoginPage /> : <Navigate to="/test-logout" />}
+      //    />
+      //    {/* 로그인 상태일 때 */}
+      //    <Route
+      //      path="/test-logout"
+      //      element={user ? <TestLogout /> : <Navigate to="/" />}
+      //    />
+      //    <Route path=''/>
+      //  </Routes>
+      //  </BrowserRouter> 
+
+
+       
