@@ -1,0 +1,88 @@
+.Question-Wrapper {
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.Category-Text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+.Title-Wrapper {
+    width:90%;
+    border:2px solid #CBCED5;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.Title-Title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 9px;
+    margin-bottom: 3px;
+}
+
+.Title-Text {
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 12px;
+}
+
+  
+.Input-Title {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+.Btn-Wrapper {
+    display: flex;
+    width: 98%;
+    justify-content: flex-end; 
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.Post-Save-Btn {
+    background-color: #1B76D8;
+    width: 15%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+.Post-Cancel-Btn {
+    background-color: #AB1414;
+    width: 15%;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+.Post-Save-Btn:hover {
+    background-color: #0056b3;
+  }
+
+.Post-Cancel-Btn:hover {
+    background-color: #A01727;
+  }
