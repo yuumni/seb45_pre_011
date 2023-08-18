@@ -44,12 +44,17 @@ function Login() {
       // Axios를 사용하여 서버로 POST 요청 전송
       // axios.post 메서드가 http 요청(request) 보내주는 메소드임을 잊지 말자
       const response = await axios.post(
-        "http://localhost:3001/user/login",
+        "https://d1fe-218-55-39-149.ngrok-free.app/users/login",
         body
       );
 
       // 서버에서 받아온 엑세스 토큰 추출
-      const accessToken = response.data.accessToken;
+      const accessToken = response.data.token;
+      console.log(`${accessToken}`);
+      console.log(response);
+
+      const authToken = response.headers['x-auth-token'];
+      console.log(`${authToken}`);
 
       // 서버에서 받아온 토큰을 로컬 스토리지에 저장해서...
       localStorage.setItem("token", accessToken);

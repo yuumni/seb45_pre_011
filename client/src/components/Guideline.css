@@ -1,0 +1,33 @@
+.Guideline-Wrapper {
+    width: 90%;
+    background-color: #EBF4FB;
+    padding: 20px;
+    border: 2px solid #B9EEFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.Guideline-Title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.Guideline-Text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 3px;
+}
+
+.Guideline-List-Title {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+
+.Guideline-List-Text {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-left: 20px;
+    padding-left: 10px;
+}

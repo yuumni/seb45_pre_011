@@ -1,6 +1,7 @@
 import React, { useRef, useMemo } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css'; // Quill의 스타일 파일
+import './PostEditor.css';
 
 const PostEditor = ({ content, onContentChange }) => {
     const QuillRef = useRef(null);
@@ -18,7 +19,9 @@ const PostEditor = ({ content, onContentChange }) => {
     []);
 
     return (
-        <div>
+        <div className='Editor-Wrapper'>
+          <p className='Editor-Title'>What are the details of your problem?</p>
+          <span className='Editor-Text'>Introduce the problem and expand on what you put in the title. Minimum 20 characters.</span>
           <ReactQuill
             theme="snow"
             value={content}
