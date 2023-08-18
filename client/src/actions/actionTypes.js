@@ -1,0 +1,9 @@
+export const SET_TITLE = 'SET_TITLE';
+export const SET_CONTENT = 'SET_CONTENT';
+export const SET_USERNAME = 'SET_USERNAME';
+export const SET_EMAIL = 'SET_EMAIL';
+export const SET_PASSWORD = 'SET_PASSWORD';
+export const SET_GENDER = 'SET_GENDER';
+export const SET_PHONE = 'SET_PHONE';
+export const SET_NICKNAME = 'SET_NICKNAME';
+export const SET_ACCESSTOKEN = 'SET_ACCESSTOKEN';
