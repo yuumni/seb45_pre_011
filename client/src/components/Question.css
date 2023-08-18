@@ -1,0 +1,102 @@
+.Question {
+  width: calc(1200px- 161px);
+  height: fit-content;
+  border-top: 1px solid lightgray;
+  display: flex;
+}
+
+.left-section {
+  width: 15%;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+.good, .vote-count, .bad {
+  padding-left: 70px;
+}
+
+.right-section {
+  width: 85%;
+}
+
+.content-section {
+ 
+}
+
+.title {
+  color: rgb(11, 93, 192);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 13px 0 7px;
+  max-height: calc(13px + 7px + 18px * 1.5 + 2px);
+  overflow: hidden; 
+}
+
+.title:hover {
+  color: rgb(65, 150, 255);
+  cursor: pointer;
+}
+
+.content {
+  font-size: 15px;
+  height: fit-content;
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tags {
+  display: flex;
+  padding-left: 2px; 
+  min-height: 42px;
+  height: fit-content;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.tag {
+  padding: 3px 6px;
+  border-radius: 5px;
+  background-color: rgb(218, 232, 241);
+  color: rgb(45, 95, 139);
+  font-size: 13px;
+  line-height: 19px;
+  height: 19px;
+  margin-right: 7px;
+}
+
+.tag:hover {
+  background-color: rgb(183, 211, 228);
+  cursor: pointer;
+  color: rgb(35, 74, 109);
+}
+
+
+.user {
+  display: flex;
+  align-items: center;
+  min-width: 180px;
+  justify-content: center;
+  gap: 5px;
+  padding: 7px 0 ;
+}
+
+.user-photo {
+  width: 15px;
+  height: 15px;
+  border: 2.3px solid;
+}
+
+.username {
+  color: rgb(11, 93, 192);
+  font-size: 13px;
+  line-height: 15px;
+}
