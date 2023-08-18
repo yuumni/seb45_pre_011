@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   height: 51px;
   border-top: 4px solid orange;
   border-bottom: 1px solid lightgray;
@@ -11,20 +11,21 @@
   align-items: center;
   width: 1200px;
   margin: 0 auto;
-  height: 50px;
+  height: 51px;
   position: relative;
 }
 
-.logo {
+.logo-body {
   width: fit-content;
   display: flex;
   font-size: 20px;
   padding: 13px 5px 8px;
-  height: 51px;
+  height: 100%;
   box-sizing: border-box;
+  /* transform: translateY(.4px); */
 }
 
-.logo:hover {
+.logo-body:hover {
   background-color: rgb(228, 231, 233);
   cursor: pointer;
 }
@@ -148,6 +149,7 @@
   align-items: center;
   box-shadow: 0 4px 10px lightgray;
   background-color: #fff;
+
 }
 
 .triangle {
@@ -181,7 +183,7 @@
 .left span {
   color: black;
   letter-spacing: .2px;
-  font-family: var(--font-googleFont);
+  font-family: var(--font-google);
   font-weight: 480;
 }
 
@@ -197,7 +199,7 @@
 .right span {
   color: black;
   letter-spacing: .2px;
-  font-family: var(--font-googleFont);
+  font-family: var(--font-google);
   font-weight: 480;
 }
 

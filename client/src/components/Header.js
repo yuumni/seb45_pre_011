@@ -3,6 +3,10 @@ import './Header.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
+import LoginPage from "./LoginPage";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
+
 function Header() {
   const [isSearchDropdownOpen, setIsSearchDropdownOpen] = useState(false);
   const searchInputRef = useRef(null);
@@ -27,7 +31,7 @@ function Header() {
     <>
     <div className="header">
       <div className="header-center">
-        <div className="logo">
+        <div className="logo-body">
           <img className='logo-icon' src='image/pngwing.com.png'/>
           <div className='logo-letter-first'>stack</div>
           <div className="logo-letter-second">overflow</div>

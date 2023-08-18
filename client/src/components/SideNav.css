@@ -1,8 +1,17 @@
+.side-container {
+  width: 1200px;
+  height: 100%;
+}
+
 .sidebar-body {
-  border: 1px solid;
   width: 161px;
-  height: 400px;
+  height: 100%;
   padding-top: 30px;
+  position: fixed;
+  background-color: #fff;
+  border-right: 1px solid lightgray;
+  top: 56px;
+  z-index: 99;
 }
 
 .home-tab {
