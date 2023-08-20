@@ -35,7 +35,7 @@ function Header() {
       <div className="header-center">
 
 
-        <Link to='/'>
+        <Link to='/' style={{ textDecoration: 'none', color: 'black', height: '100%'}}>
         <div className="logo-body">
           <img className='logo-icon' src='image/pngwing.com.png'/>
           <div className='logo-letter-first'>stack</div>
@@ -62,7 +62,7 @@ function Header() {
           {isSearchDropdownOpen && <SearchDropdown />}
         </div>
         
-        <Link to='/Login'>
+        <Link to='/Login' style={{height: '31px'}}>
         <div className="log-in-btn">
           Log in
         </div>
