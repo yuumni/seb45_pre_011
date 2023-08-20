@@ -3,6 +3,7 @@ import stackoverflowLogo from "../assets/stackoverflowLogo.svg";
 import OAuth from "./OAuth";
 import Login from "./Login";
 import "./LoginPage.css";
+import { Link } from "react-router-dom";
 
 function LoginPage() {
   return (
@@ -12,7 +13,7 @@ function LoginPage() {
         <OAuth />
         <Login />
         <div className="guidemsg">
-          계정이 없으신가요? <span className="signupmsg">회원가입</span>
+          계정이 없으신가요? <Link to='/sign-up'><span className="signupmsg">회원가입</span></Link>
         </div>
       </div>
     </div>

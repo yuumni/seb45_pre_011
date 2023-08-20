@@ -8,19 +8,16 @@
 .left-section {
   width: 15%;
   box-sizing: border-box;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .good, .vote-count, .bad {
-  padding-left: 70px;
+  margin-left: 70px;
+  width: fit-content;
 }
 
 .right-section {
   width: 85%;
-}
-
-.content-section {
- 
 }
 
 .title {

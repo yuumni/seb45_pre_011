@@ -4,6 +4,10 @@
   border-top: 4px solid orange;
   border-bottom: 1px solid lightgray;
   background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 
 .header-center {

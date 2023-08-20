@@ -68,9 +68,11 @@ function Header() {
         </div>
         </Link>
 
+        <Link to='/sign-up' style={{height: '31px'}}>
         <div className="sign-up-btn">
           Sign up
         </div>
+        </Link>
 
       </div>
     </div> 
