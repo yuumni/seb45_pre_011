@@ -25,7 +25,7 @@ function SideNav() {
   };
 
   return (
-    <div className="side-container">
+    <>
       <div className="sidebar-body">
       <div
         className={`home-tab ${activeTab === "home" ? "active" : ""}`}
@@ -63,7 +63,7 @@ function SideNav() {
         Companies
       </div>
       </div>
-    </div>
+    </>
     
   );
 }

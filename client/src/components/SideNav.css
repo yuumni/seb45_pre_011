@@ -1,17 +1,16 @@
-.side-container {
+/* .side-container {
   width: 1200px;
   height: 100%;
-}
+  border: 1px solid;
+} */
 
 .sidebar-body {
   width: 161px;
-  height: 100%;
   padding-top: 30px;
-  position: fixed;
+  /* position: fixed; */
   background-color: #fff;
   border-right: 1px solid lightgray;
-  top: 56px;
-  z-index: 99;
+  /* top: 56px; */
 }
 
 .home-tab {

@@ -6,7 +6,7 @@ import Question from "../components/Question";
 function Questions() {
  
   return (
-    <>
+    <div className="questions-wrapper">
       <div className='questions-board'>
         <div className="board-title">All Questions</div>
         <div className="create-ask">Ask Question</div>
@@ -39,7 +39,7 @@ function Questions() {
         <Question />
       </div>
       
-    </>
+    </div>
   );
 }
 

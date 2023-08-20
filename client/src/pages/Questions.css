@@ -1,14 +1,17 @@
 /* body,html {
   background-color: #fff;
 } */
-
+.questions-wrapper {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
 .questions-board {
   width: calc(1200px - 161px);
   height: 130px;
-  position: absolute;
-  top: 56px;
-  transform: translateX(161px);
   display: flex;
+  
   box-sizing: border-box;
   justify-content: space-between;
 }
@@ -40,9 +43,6 @@
 
 .questions-container {
   width: calc(1200px - 161px);
-  transform: translateX(161px);
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 186px;
 }

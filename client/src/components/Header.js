@@ -6,6 +6,8 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import LoginPage from "./LoginPage";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
+import { Link } from "react-router-dom";
+
 
 function Header() {
   const [isSearchDropdownOpen, setIsSearchDropdownOpen] = useState(false);
@@ -31,11 +33,20 @@ function Header() {
     <>
     <div className="header">
       <div className="header-center">
+
+
+        <Link to='/'>
         <div className="logo-body">
           <img className='logo-icon' src='image/pngwing.com.png'/>
           <div className='logo-letter-first'>stack</div>
           <div className="logo-letter-second">overflow</div>
         </div>
+        </Link>
+        
+
+
+
+
         <div className="products-btn">
           Products
         </div>
@@ -51,9 +62,11 @@ function Header() {
           {isSearchDropdownOpen && <SearchDropdown />}
         </div>
         
+        <Link to='/Login'>
         <div className="log-in-btn">
           Log in
         </div>
+        </Link>
 
         <div className="sign-up-btn">
           Sign up
