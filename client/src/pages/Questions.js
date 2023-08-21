@@ -18,6 +18,7 @@ function Questions() {
       <div className="questions-container">
         <Question />
         <Question />
+        {/* <Question />
         <Question />
         <Question />
         <Question />
@@ -39,8 +40,7 @@ function Questions() {
         <Question />
         <Question />
         <Question />
-        <Question />
-        <Question />
+        <Question /> */}
       </div>
       
     </div>

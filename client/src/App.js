@@ -13,6 +13,7 @@ import SignUp from "./pages/Signup";
 import Login from "./components/Login";
 import Footer from './components/Footer';
 import PostEditor from "./components/PostEditor";
+import Mypage from "./pages/Mypage";
 
 function App() {
   const user = useSelector(selectedUser);
@@ -30,6 +31,7 @@ function App() {
               <div className="container">
                 <SideNav_Main />
                 <Questions />
+                {/* <Mypage /> */}
               </div>
               <Footer />
             </div>

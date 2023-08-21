@@ -24,6 +24,7 @@ body {
 .container {
   width: 1200px;
   height: fit-content; 
+  min-height: 1500px;
   margin: 0 auto; 
   display: flex;
 }
